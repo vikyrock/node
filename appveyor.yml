@@ -5,9 +5,9 @@ environment:
     - nodejs_version: "6"
 
 #Install scripts (runs after repo cloning)
-insatll:
+install:
   # Get the latest version of node.js or io.js
-  - ps: Install-Product node $env: nodejs_version 
+  - ps: Install-Product node $env:nodejs_version 
   # Install modules
   - npm install
 
