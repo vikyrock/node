@@ -1,0 +1,23 @@
+#test again this version of node.js
+environment: 
+ matrix:
+ #node.js
+    - nodejs_version: "6"
+
+#Install scripts (runs after repo cloning)
+insatll:
+  # Get the latest version of node.js or io.js
+  - ps: Insatll-Product node $env: nodejs_version 
+  # Install modules
+  - npm install
+
+  # Post install test scripts.
+  test_script:
+    # Output usefull info for debugging.
+    - node --version
+    - npm --version
+    # Run tests
+    - npm test
+
+  #Don't actually build
+   build: off
