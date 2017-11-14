@@ -20,4 +20,4 @@ install:
     - npm test
 
   #Don't actually build
-   build: off
+   build : off

@@ -1,7 +1,6 @@
-//var chalk = require('chalk');  
-import chalk from 'chalk';
+// var chalk = require('chalk');  
+import chalk from 'chalk'
 
-//chalk is a librery allow us to give output in specific color
+// chalk is a librery allow us to give output in specific color
 
-
-console.log(chalk.green('Starting app in dev mode...'));
+console.log(chalk.green('Starting app in dev mode...')); // eslint-disable-line no-console
